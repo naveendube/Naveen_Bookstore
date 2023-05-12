@@ -4,7 +4,7 @@
 }
 #main{
     background-color: rgb(241, 234, 234); 
-   height: 780px;
+   height: 700px;
 }
 #index{
     background-color:lightslategray; 
@@ -109,8 +109,13 @@
    }
 }
 #fd1{
-   background-color:cornflowerblue;
+   background-color:black;
+   /* margin-top: 40px; */
    
+}
+#fd2{
+    background-color:black;
+    margin-top:40px;
 }
 #foot{
    text-align: center;
@@ -220,6 +225,10 @@
     display: flex;
     background-color: black;
 }
+.error{
+    color: red;
+    text-align: right;
+}
 
 /* --contact-- */
 
@@ -255,6 +264,7 @@
     width: 35%;
     border-radius: 20px;
     border: none;
+   
 }
 .btn{
     height: 40px;
@@ -298,12 +308,20 @@
     margin: 50px ;
     margin-top: 15px;
 }
+.btns:hover{
+    background-color:orange;
+    height: 50px;
+    width: 210px;
+    color: black;
+}
 
 .headings{
     color: rgb(47, 68, 255);
     font-size: 40px;
     padding: 30px;
-    margin-left: 30%;
+    /* margin-left: 30%; */
+    text-align: center;
+    /* margin-right: 70px; */
    
 }
 #Sign{
@@ -320,4 +338,10 @@
     font-weight: bold;
     border: none;
     color: white;
+}
+.bt:hover{
+    background-color:aqua;
+    height: 50px;
+    width: 210px;
+    color: black;
 }

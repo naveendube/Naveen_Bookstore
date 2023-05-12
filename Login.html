@@ -17,8 +17,8 @@
             </div>
             <div class="navmenu">
                 <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="">Categories</a></li>
+                    <li><a href="indexs.html">Home</a></li>
+                    <li><a href="Categories.html">Categories</a></li>
                     <li><a href="Registration.html"></a>Registered Form</li>
                     <li><a href="Login.html">SignIn</a></li>
                     <li><a href="Contact.html">Contact Us</a></li>
@@ -28,11 +28,17 @@
         </nav>
         <section id="Sign">
             <h1 class="headings">LogIn</h1>
-            <form class="forms">
+            <form class="forms" onsubmit="return signvalidateForm()">
                 
-                <input type="email" class="inputs" placeholder="Email">
+                <input type="email" class="inputs" id="email" placeholder="Email" onblur="validate2()">
+                <table>
+                    <tr><td></td><td class="error" id="error2"></td></tr>
+                </table>
                 
-                <input type="password" class="inputs" placeholder="Password">
+                <input type="password" class="inputs" id="pass" placeholder="Password" onblur="validate6()">
+                <table>
+                    <tr><td></td><td class="error" id="error7"></td></tr>
+                </table>
 
                 <!-- <input type="Confirmpassword" class="inputs" placeholder="Confirmpassword"> -->
          
@@ -40,6 +46,7 @@
             </form>
         </section>
     </header>
+    <hr>
     <footer>
         <footer id="fd1">
             <h1 id="foot">All About BookStore </h1>
@@ -63,6 +70,7 @@
             </ul>
 
     </footer>
+    <script src="Javascript.js"></script>
   
     
 </body>

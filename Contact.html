@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Book store |  HTML CSS</title>
-    
+    <style>
+       
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,8 +19,8 @@
             </div>
             <div class="navmenu">
                 <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="">Categories</a></li>
+                    <li><a href="indexs.html">Home</a></li>
+                    <li><a href="Categories.html">Categories</a></li>
                     <li><a href="Registration.html">Registered Form</a></li>
                     <li><a href="Login.html">Sign In</a></li>
                     <li><a href="Contact.html">Contact Us</a></li>
@@ -31,22 +33,38 @@
         </nav>
         <section id="Contact">
             <h1 class="heading">Contact Us</h1>
-            <form class="forms">
-                <input type="text" class="input" placeholder="Name">
-              
-                <input type="email" class="input" placeholder="Email">
-               
-                <input type="text" class="input" placeholder="Phone Number">
-
-                <input type="email" class="input" placeholder="Address">
-               
-                <input type="text" class="input" placeholder="PinCode">
+            <form class="forms" onsubmit="return validateForm()">
                 
+               
+                <input type="text" id="firstName" class="input" placeholder="Name" onblur="validate1()">
+                <table>
+                    <tr><td></td><td class="error" id="error1"></td></tr>
+                </table>
+           
+                <input type="email" class="input" id="email" placeholder="Email" onblur="validate2()">
+                <table>
+                    <tr><td class="error" id="error2"></td></tr>
+                </table>
+                <input type="text" class="input" id="num" placeholder="Phone Number" onblur="validate3()">
+                <table>
+                    <tr><td></td><td class="error" id="error3"></td></tr>
+                </table>
+
+                <input type="text" class="input" id="Add" placeholder="Address" onblur="validate4()">
+                <table>
+                    <tr><td></td><td class="error" id="error4"></td></tr>
+                </table>
+               
+                <input type="text" class="input" id="pin" placeholder="PinCode" onblur="validate5()">
+                <table>
+                    <tr><td></td><td class="error" id="error5"></td></tr>
+                </table>
+           
                 <input type="submit" class="btn">
             </form>
         </section>
     </header>
-
+<hr>
     <footer>
         <footer id="fd1">
             <h1 id="foot">All About BookStore </h1>
@@ -70,5 +88,9 @@
             </ul>
 
     </footer>
+    <script src="Javascript.js"></script>
+    <!-- </footer> -->
+
+
 </body>
 </html>

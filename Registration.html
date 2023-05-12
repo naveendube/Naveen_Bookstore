@@ -17,8 +17,8 @@
             </div>
             <div class="navmenu">
                 <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href=""></a>Categories</li>
+                    <li><a href="indexs.html">Home</a></li>
+                    <li><a href="Categories.html"></a>Categories</li>
                     <li><a href="Registration.html">Registered Form</a></li>
                     <li><a href="Login.html">Sign In</a></li>
                     <li><a href="Contact.html">Contact Us</a></li>
@@ -29,18 +29,33 @@
         </nav>
         <section id="Contact">
             <h1 class="heading">Registration form</h1>
-            <form class="forms">
-                <input type="text" class="input" placeholder="Name">
+            <form class="forms" id="regForm" action="" novalidate>
+                <input type="text" class="input" id="firstName" placeholder="Name" >
+                <table>
+                    <tr><td></td><td class="error" id="error1"></td></tr>
+                </table>
 
-                <input type="text" class="input" placeholder="Lstname">
+                <input type="text" class="input" id="lastName" placeholder="LastName" >
+                <table>
+                    <tr><td></td><td class="error" id="error6"></td></tr>
+                </table>
               
-                <input type="email" class="input" placeholder="Email">
-                <input type="password" class="input" placeholder="Password">
+                <input type="email" id="email" class="input" placeholder="Email">
+                <table>
+                    <tr><td></td><td class="error" id="error2"></td></tr>
+                </table>
+
+                <input type="password" class="input" id="pass" placeholder="Password">
+                <table>
+                    <tr><td></td><td class="error" id="error3"></td></tr>
+                </table>
+
                 
-                <input type="submit" class="bt" placeholder="Register">
+                <input type="submit" class="bt" value="REGISTER" placeholder="Register">
             </form>
         </section>
     </header>
+    <hr>
     <footer>
         <footer id="fd1">
             <h1 id="foot">All About BookStore </h1>
@@ -64,5 +79,7 @@
             </ul>
 
     </footer>
+    <script src="Library/jquery-3.6.4.min.js"></script>
+    <script src="jquery.js"></script>
 </body>
 </html>
